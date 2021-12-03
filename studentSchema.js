@@ -4,9 +4,9 @@ const mongoose = require("mongoose")
 const { Schema } = mongoose;
 
 const student = new Schema({
-    name: String,
-    registrationNumber: String,
-    marks: Number
+    bookName: String,
+    issuerName: String,
+    dueDate: String
 });
 
 module.exports = mongoose.model("studentDetails",student,"SL-LAB")
